@@ -8,3 +8,9 @@ var schoolNumber = 42;
 
 var isRegistered = true;
 console.log(isRegistered);
+
+var job;
+console.log(job);
+
+job = 'student';
+console.log(job)
