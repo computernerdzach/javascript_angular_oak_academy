@@ -198,7 +198,6 @@
 var alexAverage = ((90 + 80 + 95) / 3);
 var saraAverage = ((89 + 76 + 98) / 3);
 var nancyAverage = ((42 + 98 + 83) / 3);
-var highScore;
 
 switch (true) {
     case (alexAverage > saraAverage && alexAverage > nancyAverage):
