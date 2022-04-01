@@ -41,21 +41,26 @@
 
 
 //////////// BASIC OPERATORS ////////////
-var totalDistance, distanceAlex, distanceSam;
-var totalDistance = 20;
+// var totalDistance, distanceAlex, distanceSam;
+// totalDistance = 20;
 
-var distanceAlex = totalDistance - 12;
-console.log(distanceAlex);
-var distanceSam = totalDistance - 7;
-console.log(distanceSam);
-console.log(distanceSam * 2);
-console.log(distanceSam / 2);
+// distanceAlex = totalDistance - 12;
+// console.log(distanceAlex);
+// distanceSam = totalDistance - 7;
+// console.log(distanceSam);
+// console.log(distanceSam * 2);
+// console.log(distanceSam / 2);
 
 // logical operators //
-var distanceToSchool, distanceToHome;
+// var distanceToSchool, distanceToHome;
 
-distanceToHome = 14;
-distanceToSchool = 6;
+// distanceToHome = 14;
+// distanceToSchool = 6;
 
-var isCloser = distanceToHome > distanceToSchool;
-console.log(isCloser);
+// var isCloser = distanceToHome > distanceToSchool;
+// console.log(isCloser);
+
+
+// BOOLEAN LOGIC
+var isLoggedIn = false;
+
