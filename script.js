@@ -199,20 +199,24 @@ var alexAverage = ((90 + 80 + 95) / 3);
 var saraAverage = ((89 + 76 + 98) / 3);
 var nancyAverage = ((42 + 98 + 83) / 3);
 
+console.log('Alex average grade ', alexAverage);
+console.log('Sara average grade ', saraAverage);
+console.log('Nancy average grade ', nancyAverage);
+
 switch (true) {
     case (alexAverage > saraAverage && alexAverage > nancyAverage):
         highScore = alexAverage;
-        console.log('Alex has the highest average: ' + highScore);
+        console.log('Alex has the highest average:' + highScore);
         break;
 
     case (saraAverage > alexAverage && saraAverage > nancyAverage):
         highScore = saraAverage;
-        console.log('Sara has the highest average: ' + highScore);
+        console.log('Sara has the highest average:' + highScore);
         break;
 
     case (nancyAverage > alexAverage && nancyAverage > saraAverage):
         highScore = nancyAverage;
-        console.log('Nancy has the highest average: ' + nancyAverage); 
+        console.log('Nancy has the highest average:' + nancyAverage); 
         break;
 
     default:
