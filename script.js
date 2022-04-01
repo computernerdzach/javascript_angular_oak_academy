@@ -77,25 +77,25 @@
 //     console.log('You can go to the next class.');
 // }
 
-var cafeCutoff = 18;
-var cafeCutMessage = 'Sorry, this cafe is for adults only.';
+// var cafeCutoff = 18;
+// var cafeCutMessage = 'Sorry, this cafe is for adults only.';
 
-var drinkCutoff = 23;
-var drinkCutMessage = 'You may enter, but you cannot drink alcohol.';
+// var drinkCutoff = 23;
+// var drinkCutMessage = 'You may enter, but you cannot drink alcohol.';
 
-var welcomeMessage = 'Welcome! Our drink of the day is the moscow mule!';
+// var welcomeMessage = 'Welcome! Our drink of the day is the moscow mule!';
 
-var customer = 16;
+// var customer = 16;
 
-if (customer < cafeCutoff) {
-    console.log(cafeCutMessage);
+// if (customer < cafeCutoff) {
+//     console.log(cafeCutMessage);
 
-} else if (customer >= cafeCutoff && customer < drinkCutoff) {
-    console.log(drinkCutMessage);
+// } else if (customer >= cafeCutoff && customer < drinkCutoff) {
+//     console.log(drinkCutMessage);
 
-} else {
-    console.log(welcomeMessage)
-}
+// } else {
+//     console.log(welcomeMessage)
+// }
 
 
 // var customer = 16;
@@ -120,3 +120,15 @@ if (customer < cafeCutoff) {
 //         console.log(welcomeMessage)
 //     }
 // }
+
+
+// TERNARY OPERATOR
+
+var grade = 80;
+
+grade < 45 
+    ? console.log('You cannot go to the next class.') 
+    : console.log('You can go to the next class.');
+
+var result = grade < 45 ? 'failure' : 'success';
+console.log(result)
