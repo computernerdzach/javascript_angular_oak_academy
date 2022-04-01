@@ -257,9 +257,7 @@ var maybePrint = seven_start;
 while (maybePrint <= 100) {
     if (maybePrint % 7 === 0) {
         console.log(maybePrint);
-        maybePrint++;
-    } else {
-        maybePrint++;
     }
+    maybePrint++;
 }
 
