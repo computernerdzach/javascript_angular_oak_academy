@@ -227,8 +227,39 @@
 
 // LOOPS
 
-var i = 1;
-while (i <= 10) {
+// WHILE LOOP
+// var i = 1;
+// while (i <= 10) {
+//     console.log(i);
+//     i+=2;
+// }
+
+// 1)
+console.log('Problem 1:')
+
+var startNumber = 132;
+var i = startNumber;
+var endNumber = 148;
+
+while (i <= endNumber) {
     console.log(i);
-    i+=2;
+    i += 2;
 }
+console.log('');
+
+// 2)
+console.log('Problem 2:');
+
+var seven_start = 25;
+var seven_end = 100;
+var maybePrint = seven_start;
+
+while (maybePrint <= 100) {
+    if (maybePrint % 7 == 0) {
+        console.log(maybePrint);
+        maybePrint++;
+    } else {
+        maybePrint++;
+    }
+}
+
