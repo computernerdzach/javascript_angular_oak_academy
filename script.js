@@ -142,27 +142,27 @@
 
 // SWITCH STATEMENTS
 
-var day;
-day = 'sunday';
+// var day;
+// day = 'sunday';
 
 
-switch (day) {
-    case 'saturday': 
-        console.log('I like saturday.');
-        break;
+// switch (day) {
+//     case 'saturday': 
+//         console.log('I like saturday.');
+//         break;
 
-    case 'monday':
-        console.log('I do not like monday.');
-        break;
+//     case 'monday':
+//         console.log('I do not like monday.');
+//         break;
 
-    case 'friday':
-        console.log('I really like friday.');
-        break;
+//     case 'friday':
+//         console.log('I really like friday.');
+//         break;
 
-    default:
-        console.log('I do not know the day.');
-        break;
-}
+//     default:
+//         console.log('I do not know the day.');
+//         break;
+// }
 
 
 
@@ -177,17 +177,63 @@ switch (day) {
 //     console.log('You can go to the next class.');
 // }
 
-var grade = 38;
+// var grade = 38;
+
+// switch (true) {
+//     case (grade < 40):
+//         console.log('You cannot go to the next class.');
+//         break;
+    
+//     case (grade >= 40 && grade < 45):
+//         console.log('You cannot go to the next class but you can take the exam.')
+//         break;
+
+//     default:
+//         console.log('You can go to the next class.')
+// }
+
+
+// CODE QUIZ 2
+
+var alexAverage = ((90 + 80 + 95) / 3);
+var saraAverage = ((89 + 76 + 98) / 3);
+var nancyAverage = ((42 + 98 + 83) / 3);
+var highScore;
 
 switch (true) {
-    case (grade < 40):
-        console.log('You cannot go to the next class.');
+    case (alexAverage > saraAverage && alexAverage > nancyAverage):
+        highScore = alexAverage;
+        console.log('Alex has the highest average: ' + highScore);
         break;
-    
-    case (grade >= 40 && grade < 45):
-        console.log('You cannot go to the next class but you can take the exam.')
+
+    case (saraAverage > alexAverage && saraAverage > nancyAverage):
+        highScore = saraAverage;
+        console.log('Sara has the highest average: ' + highScore);
+        break;
+
+    case (nancyAverage > alexAverage && nancyAverage > saraAverage):
+        highScore = nancyAverage;
+        console.log('Nancy has the highest average: ' + nancyAverage); 
         break;
 
     default:
-        console.log('You can go to the next class.')
+        console.log('Highest average unclear.')
+        break;
 }
+
+
+/*
+switch (highScore) {
+    case (al exAverage > saraAverage && alexAverage > nancyAverage):
+        highScore = alexAverage;
+        console.log('Alex has the highest average: ' + highScore);
+
+    case (saraAverage > alexAverage && saraAverage > nancyAverage):
+        highScore = saraAverage;
+        console.log('Sara has the highest average: ' + highScore);
+
+    case (nancyAverage > alexAverage && nancyAverage > saraAverage):
+        highScore = nancyAverage;
+        console.log('Nancy has the highest average: ' + nancyAverage);
+}
+*/
