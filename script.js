@@ -235,29 +235,65 @@
 // }
 
 // 1)
-console.log('Problem 1:')
+// console.log('Problem 1:')
 
-var startNumber = 132;
-var i = startNumber;
-var endNumber = 148;
+// var startNumber = 132;
+// var i = startNumber;
+// var endNumber = 148;
 
-while (i <= endNumber) {
-    console.log(i);
-    i += 2;
+// while (i <= endNumber) {
+//     console.log(i);
+//     i += 2;
+// }
+// console.log('');
+
+// // 2)
+// console.log('Problem 2:');
+
+// var seven_start = 25;
+// var seven_end = 100;
+// var maybePrint = seven_start;
+
+// while (maybePrint <= 100) {
+//     if (maybePrint % 7 === 0) {
+//         console.log(maybePrint);
+//     }
+//     maybePrint++;
+// }
+
+
+// FOR LOOP
+
+// console.log('PROBLEM [1]')
+// for (i = 132; i <= 148; i++) {
+//     if (i % 2 !== 0) {
+//         console.log(i);
+//     }
+// }
+
+// console.log('');
+// console.log('PROBLEM [2]');
+// for (i = 25; i <= 100; i++) {
+//     if ((i % 5 === 0) && (i % 7 === 0)) {
+//         console.log(i);
+//     }
+// }
+
+
+// CONTINUE AND BREAK //
+
+console.log('Continue statement')
+for (i = 1; i <= 10; i++) {
+    if (i % 2 !== 0) continue;
+    console.log(i)
 }
-console.log('');
 
-// 2)
-console.log('Problem 2:');
+console.log('')
 
-var seven_start = 25;
-var seven_end = 100;
-var maybePrint = seven_start;
-
-while (maybePrint <= 100) {
-    if (maybePrint % 7 === 0) {
-        console.log(maybePrint);
+console.log('Break statement')
+for (i = 1; i < 10; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+        break;
     }
-    maybePrint++;
 }
-
