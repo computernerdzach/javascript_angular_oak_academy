@@ -65,5 +65,58 @@
 // var isLoggedIn = false;
 
 
+// CONDITIONAL STATEMENTS
+// var grade;
+// grade = 55;
+
+// if (grade < 40) {
+//     console.log('You can not go to next class.');
+// } else if (grade >= 40 && grade < 45) {
+//     console.log('You can not go to next class but you can enter the exam.');
+// } else {
+//     console.log('You can go to the next class.');
+// }
+
+var cafeCutoff = 18;
+var cafeCutMessage = 'Sorry, this cafe is for adults only.';
+
+var drinkCutoff = 23;
+var drinkCutMessage = 'You may enter, but you cannot drink alcohol.';
+
+var welcomeMessage = 'Welcome! Our drink of the day is the moscow mule!';
+
+var customer = 16;
+
+if (customer < cafeCutoff) {
+    console.log(cafeCutMessage);
+
+} else if (customer >= cafeCutoff && customer < drinkCutoff) {
+    console.log(drinkCutMessage);
+
+} else {
+    console.log(welcomeMessage)
+}
 
 
+// var customer = 16;
+// checkAge(customer);
+
+// customer = 20;
+// checkAge(customer);
+
+// customer = 27;
+// checkAge(customer);
+
+
+
+// function checkAge (age) {
+//     if (customer < cafeCutoff) {
+//         console.log(cafeCutMessage);
+    
+//     } else if (customer >= cafeCutoff && customer < drinkCutoff) {
+//         console.log(drinkCutMessage);
+    
+//     } else {
+//         console.log(welcomeMessage)
+//     }
+// }
