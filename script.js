@@ -112,10 +112,10 @@
 // function checkAge (age) {
 //     if (customer < cafeCutoff) {
 //         console.log(cafeCutMessage);
-    
+
 //     } else if (customer >= cafeCutoff && customer < drinkCutoff) {
 //         console.log(drinkCutMessage);
-    
+
 //     } else {
 //         console.log(welcomeMessage)
 //     }
@@ -183,7 +183,7 @@
 //     case (grade < 40):
 //         console.log('You cannot go to the next class.');
 //         break;
-    
+
 //     case (grade >= 40 && grade < 45):
 //         console.log('You cannot go to the next class but you can take the exam.')
 //         break;
@@ -282,18 +282,106 @@
 
 // CONTINUE AND BREAK //
 
-console.log('Continue statement')
-for (i = 1; i <= 10; i++) {
-    if (i % 2 !== 0) continue;
-    console.log(i)
-}
+// console.log('Continue statement')
+// for (i = 1; i <= 10; i++) {
+//     if (i % 2 !== 0) continue;
+//     console.log(i)
+// }
 
-console.log('')
+// console.log('')
 
-console.log('Break statement')
-for (i = 1; i < 10; i++) {
-    if (i % 2 === 0) {
-        console.log(i);
-        break;
+// console.log('Break statement')
+// for (i = 1; i < 10; i++) {
+//     if (i % 2 === 0) {
+//         console.log(i);
+//         break;
+//     }
+// }
+
+
+// FUNCTIONS //
+
+// NO ARGUMENTS
+
+// function sayHello() {
+//     console.log('Hello, world!')
+// }
+
+// sayHello()
+
+// function writeBlock() {
+//     console.log('Hello world.')
+//     console.log('Goodbye world.')
+//     console.log('How are you?.')
+// }
+
+// writeBlock()
+// writeBlock()
+// writeBlock()
+// writeBlock()
+
+
+// WITH ARGUMENTS
+
+// var myName = 'Sara';
+// otherName = 'David';
+// var myAge = 37;
+
+// function sayMyNameSoMuch(name) {
+//     console.log('Oh, hello', name + '.')
+// }
+
+// sayMyNameSoMuch(myName)
+// sayMyNameSoMuch(otherName)
+
+
+// function cube(number) {
+//     console.log(number * number * number);
+// }
+
+// cube(3);
+// cube(5);
+
+
+// function bmi(length, weight) {
+//     console.log(weight / (length * length));
+// }
+
+// bmi(1.80, 85)
+
+
+// FUNCTION RETURN KEYWORD //
+
+function cube(number) {
+    if (number === 25) {
+        return 25;
     }
+    return(number * number * number);
 }
+
+function addCubes(numberA, numberB) {
+    return(cube(numberA) + cube(numberB));
+}
+
+console.log(cube(9));
+console.log(addCubes(25, 10));
+
+
+function calculateAge(birthYear) {
+    return 2022 - birthYear;
+}
+
+var age = calculateAge(1984);
+
+console.log(age);
+
+
+function enterCafe(Age) {
+    if (Age < 18) {
+        return 'You cannot enter the cafe.'
+    }
+    return 'You can enter the cafe.'
+}
+
+console.log(enterCafe(17));
+console.log(enterCafe(38));
