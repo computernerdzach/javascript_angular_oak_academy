@@ -412,44 +412,108 @@
 
 // FUNCTION QUIZ //
 
-console.log('Problem 1:');
+// console.log('Problem 1:');
 
-function subtraction(x, y) {
-    console.log('Calculating', y, 'minus', x, '...')
-    return y - x;
+// function subtraction(x, y) {
+//     console.log('Calculating', y, 'minus', x, '...')
+//     return y - x;
+// }
+
+// var result1 = subtraction(3, 5);
+// console.log(result1);
+// console.log('');
+
+
+// console.log('Problem 2:');
+
+// function isOdd(number) {
+//     console.log('Checking if', number, 'is odd ...')
+//     if (number % 2 !== 0) {
+//         return true;
+//     }
+//     return false;
+// }
+
+// var result2 = isOdd(7);
+// console.log(result2);
+// console.log('');
+
+
+// console.log('Problem 3:');
+
+// var addition = function (number) {
+//     console.log('Adding every number from 1 to', number, '...')
+//     var result = 0;
+//     for(i = 1; i <= number; i++) {
+//         result += i;
+//     }
+//     return result;
+// }
+
+// var result3 = addition(3);
+// console.log(result3);
+// console.log('');
+
+
+// FUNCTION SCOPE //
+
+// function sayName () {
+//     var Name = 'Sheldon';
+//     console.log(Name);
+// }
+
+// sayName();
+// console.log(Name);
+
+// var Name = 'Leonard';
+// console.log(Name);
+// sayName()
+
+// var count = 18;
+// console.log(count);
+
+// function writeCount() {
+//     console.log(count);
+// }
+
+// writeCount();
+
+
+
+// function sayHi () {
+//     var myWord = 'Hi there!';
+//     console.log(myWord);
+//     sayBye();
+
+//     function sayBye () {
+//         var yourWord = 'bye';
+//         console.log(yourWord);
+//     }
+// }
+
+// sayHi();
+
+
+
+// var sentence = 'Hello World.';
+
+// function saySentence() {
+//     sentence = 'bye bye';
+//     console.log(sentence);
+// }
+
+// saySentence();
+// console.log(sentence);
+
+
+function writeNumber() {
+    var myx = 30;
+    console.log(myx);
 }
 
-var result1 = subtraction(3, 5);
-console.log(result1);
-console.log('');
-
-
-console.log('Problem 2:');
-
-function isOdd(number) {
-    console.log('Checking if', number, 'is odd ...')
-    if (number % 2 !== 0) {
-        return true;
-    }
-    return false;
+function doSomething() {
+    console.log(myx);
 }
 
-var result2 = isOdd(7);
-console.log(result2);
-console.log('');
-
-
-console.log('Problem 3:');
-
-var addition = function (number) {
-    console.log('Adding every number from 1 to', number, '...')
-    var result = 0;
-    for(i = 1; i <= number; i++) {
-        result += i;
-    }
-    return result;
-}
-
-var result3 = addition(3);
-console.log(result3);
-console.log('');
+writeNumber();
+doSomething();
