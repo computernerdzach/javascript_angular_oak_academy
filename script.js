@@ -352,36 +352,59 @@
 
 // FUNCTION RETURN KEYWORD //
 
-function cube(number) {
-    if (number === 25) {
-        return 25;
-    }
-    return(number * number * number);
-}
+// function cube(number) {
+//     if (number === 25) {
+//         return 25;
+//     }
+//     return(number * number * number);
+// }
 
-function addCubes(numberA, numberB) {
-    return(cube(numberA) + cube(numberB));
-}
+// function addCubes(numberA, numberB) {
+//     return(cube(numberA) + cube(numberB));
+// }
 
-console.log(cube(9));
-console.log(addCubes(25, 10));
+// console.log(cube(9));
+// console.log(addCubes(25, 10));
 
 
-function calculateAge(birthYear) {
+// function calculateAge(birthYear) {
+//     return 2022 - birthYear;
+// }
+
+// var age = calculateAge(1984);
+
+// console.log(age);
+
+
+// function enterCafe(Age) {
+//     if (Age < 18) {
+//         return 'You cannot enter the cafe.'
+//     }
+//     return 'You can enter the cafe.'
+// }
+
+// console.log(enterCafe(17));
+// console.log(enterCafe(38));
+
+
+
+// FUNCTION DECLARATION AND EXPRESSION //
+
+//DECLARATION
+// function calculateAge(birthYear) {
+//     return 2022 - birthYear;
+// }
+
+//EXPRESSION
+var calculateAge = function(birthYear){
     return 2022 - birthYear;
 }
 
-var age = calculateAge(1984);
 
+var age = calculateAge(1984);
 console.log(age);
 
+calculateAge = 'John';
+console.log(calculateAge)
 
-function enterCafe(Age) {
-    if (Age < 18) {
-        return 'You cannot enter the cafe.'
-    }
-    return 'You can enter the cafe.'
-}
-
-console.log(enterCafe(17));
-console.log(enterCafe(38));
+var Age = calculateAge(1990);
