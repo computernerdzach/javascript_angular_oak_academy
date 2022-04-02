@@ -396,15 +396,60 @@
 // }
 
 //EXPRESSION
-var calculateAge = function(birthYear){
-    return 2022 - birthYear;
+// var calculateAge = function(birthYear){
+//     return 2022 - birthYear;
+// }
+
+
+// var age = calculateAge(1984);
+// console.log(age);
+
+// calculateAge = 'John';
+// console.log(calculateAge)
+
+// var Age = calculateAge(1990);
+
+
+// FUNCTION QUIZ //
+
+console.log('Problem 1:');
+
+function subtraction(x, y) {
+    console.log('Calculating', y, 'minus', x, '...')
+    return y - x;
 }
 
+var result1 = subtraction(3, 5);
+console.log(result1);
+console.log('');
 
-var age = calculateAge(1984);
-console.log(age);
 
-calculateAge = 'John';
-console.log(calculateAge)
+console.log('Problem 2:');
 
-var Age = calculateAge(1990);
+function isOdd(number) {
+    console.log('Checking if', number, 'is odd ...')
+    if (number % 2 !== 0) {
+        return true;
+    }
+    return false;
+}
+
+var result2 = isOdd(7);
+console.log(result2);
+console.log('');
+
+
+console.log('Problem 3:');
+
+var addition = function (number) {
+    console.log('Adding every number from 1 to', number, '...')
+    var result = 0;
+    for(i = 1; i <= number; i++) {
+        result += i;
+    }
+    return result;
+}
+
+var result3 = addition(3);
+console.log(result3);
+console.log('');
