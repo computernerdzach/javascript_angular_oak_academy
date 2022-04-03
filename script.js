@@ -670,34 +670,74 @@
 // console.log(student[schoolName]);
 
 
-var Leonard = {
-    name: 'Leonard',
-    school: 'calTech',
-    age: 35
-};
-console.log(Leonard)
+// var Leonard = {
+//     name: 'Leonard',
+//     school: 'calTech',
+//     age: 35
+// };
+// console.log(Leonard)
 
-Leonard.age += 1;
-Leonard['school'] = 'MIT';
+// Leonard.age += 1;
+// Leonard['school'] = 'MIT';
 
-console.log(Leonard);
+// console.log(Leonard);
 
 
-var student11 = {
-    name: 'Amy',
-    age: 25,
-    friends: ['Howard', 'Bernadette', 'Raj'],
-    bestFriend: {
-        firstName: 'Penny',
-        birhtYear: 1988
+// var student11 = {
+//     name: 'Amy',
+//     age: 25,
+//     friends: ['Howard', 'Bernadette', 'Raj'],
+//     bestFriend: {
+//         firstName: 'Penny',
+//         birhtYear: 1988
+//     }
+// };
+
+// var bestFrinedOfStudent11 = student11.bestFriend.firstName;
+// console.log(student11)
+// console.log(bestFrinedOfStudent11);
+
+// var friend2 = student11.friends[1];
+// console.log(friend2);
+
+// HOW TO ADD A PROPERTY TO OBJECTS //
+
+var colors = {};
+colors.orange = {code: 123};
+console.log(colors.orange.code)
+
+colors.black = {code: [4, 5, 6]};
+console.log(colors.black.code);
+console.log(colors.black.code[1]);
+
+console.log(colors)
+
+
+var blogPosts = [
+    {
+        title: 'weather',
+        content: 'it is rainy today',
+        comments: [
+            {
+                name: 'John',
+                lastName: 'Travolta'
+            },
+            {
+                name: 'Frodo',
+                lastName: 'Baggins'
+            }
+        ]
+    },
+    {
+        title: 'weather',
+        content: 'i do not like weather'
     }
-};
+];
 
-var bestFrinedOfStudent11 = student11.bestFriend.firstName;
-console.log(student11)
-console.log(bestFrinedOfStudent11);
+console.log(blogPosts[0].title);
+console.log(blogPosts[0].comments[1].name);
 
-var friend2 = student11.friends[1];
-console.log(friend2);
+
+
 
 
