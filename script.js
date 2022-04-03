@@ -738,34 +738,57 @@
 // console.log(blogPosts[0].comments[1].name);
 
 
-var universities = [
-    {
-        name: 'UCLA',
-        hasGone: true,
-        year: 2006
-    },
-    {
-        name: 'USC',
-        hasGone: true,
-        year: 2012
-    },
-    {
-        name: 'AVC',
-        hasGone: false,
-        year: 2000
+// var universities = [
+//     {
+//         name: 'UCLA',
+//         hasGone: true,
+//         year: 2006
+//     },
+//     {
+//         name: 'USC',
+//         hasGone: true,
+//         year: 2012
+//     },
+//     {
+//         name: 'AVC',
+//         hasGone: false,
+//         year: 2000
+//     }
+// ];
+
+// universities.forEach (function (university) {
+//     console.log(university.name);
+//     if (university.hasGone) {
+//         console.log(university.year);
+//     }
+//     console.log('');
+// });
+
+
+// OBJECT METHODS //
+
+var sheldon = {
+
+    name: 'Sheldon',
+    age: 25,
+    hasGone: true,
+    friends: ['Penny', 'Raj'],
+
+    say: function() {
+        console.log('Say hi, Sheldon.');
     }
-];
 
-universities.forEach (function (university) {
-    console.log(university.name);
-    if (university.hasGone) {
-        console.log(university.year);
+};
+
+sheldon.say();
+
+var Leonard = {
+    name: 'Leonard',
+    say: function() {
+        console.log('Say hi, Leonard.')
     }
-    console.log('');
-});
+}
 
-
-
-
+Leonard.say();
 
 
