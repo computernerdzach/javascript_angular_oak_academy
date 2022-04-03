@@ -740,28 +740,28 @@
 
 var universities = [
     {
-        name: 'Tony',
+        name: 'UCLA',
         hasGone: true,
-        year: 1978
+        year: 2006
     },
     {
-        name: 'Linda',
+        name: 'USC',
         hasGone: true,
-        year: 2019
+        year: 2012
     },
     {
-        name: 'Carl',
+        name: 'AVC',
         hasGone: false,
-        year: 2008
+        year: 2000
     }
 ];
 
 universities.forEach (function (university) {
+    console.log(university.name);
     if (university.hasGone) {
-        console.log(university.name, university.year);
-    } else {
-        console.log(university.name);
+        console.log(university.year);
     }
+    console.log('');
 });
 
 
