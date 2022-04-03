@@ -657,15 +657,47 @@
 // var student = new Object();
 // student.name = 'Arthur Dent';
 
-var schoolName = 'school';
+// var schoolName = 'school';
 
-var student = {
-    name: 'Arthur Dent',
-    age: 36,
-    school: 'London U'
+// var student = {
+//     name: 'Arthur Dent',
+//     age: 36,
+//     school: 'London U'
+// };
+
+// // console.log(student['name']);
+// // console.log(student.school);
+// console.log(student[schoolName]);
+
+
+var Leonard = {
+    name: 'Leonard',
+    school: 'calTech',
+    age: 35
+};
+console.log(Leonard)
+
+Leonard.age += 1;
+Leonard['school'] = 'MIT';
+
+console.log(Leonard);
+
+
+var student11 = {
+    name: 'Amy',
+    age: 25,
+    friends: ['Howard', 'Bernadette', 'Raj'],
+    bestFriend: {
+        firstName: 'Penny',
+        birhtYear: 1988
+    }
 };
 
-// console.log(student['name']);
-// console.log(student.school);
-console.log(student[schoolName]);
+var bestFrinedOfStudent11 = student11.bestFriend.firstName;
+console.log(student11)
+console.log(bestFrinedOfStudent11);
+
+var friend2 = student11.friends[1];
+console.log(friend2);
+
 
