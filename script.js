@@ -702,40 +702,68 @@
 
 // HOW TO ADD A PROPERTY TO OBJECTS //
 
-var colors = {};
-colors.orange = {code: 123};
-console.log(colors.orange.code)
+// var colors = {};
+// colors.orange = {code: 123};
+// console.log(colors.orange.code)
 
-colors.black = {code: [4, 5, 6]};
-console.log(colors.black.code);
-console.log(colors.black.code[1]);
+// colors.black = {code: [4, 5, 6]};
+// console.log(colors.black.code);
+// console.log(colors.black.code[1]);
 
-console.log(colors)
+// console.log(colors)
 
 
-var blogPosts = [
+// var blogPosts = [
+//     {
+//         title: 'weather',
+//         content: 'it is rainy today',
+//         comments: [
+//             {
+//                 name: 'John',
+//                 lastName: 'Travolta'
+//             },
+//             {
+//                 name: 'Frodo',
+//                 lastName: 'Baggins'
+//             }
+//         ]
+//     },
+//     {
+//         title: 'weather',
+//         content: 'i do not like weather'
+//     }
+// ];
+
+// console.log(blogPosts[0].title);
+// console.log(blogPosts[0].comments[1].name);
+
+
+var universities = [
     {
-        title: 'weather',
-        content: 'it is rainy today',
-        comments: [
-            {
-                name: 'John',
-                lastName: 'Travolta'
-            },
-            {
-                name: 'Frodo',
-                lastName: 'Baggins'
-            }
-        ]
+        name: 'Tony',
+        hasGone: true,
+        year: 1978
     },
     {
-        title: 'weather',
-        content: 'i do not like weather'
+        name: 'Linda',
+        hasGone: true,
+        year: 2019
+    },
+    {
+        name: 'Carl',
+        hasGone: false,
+        year: 2008
     }
 ];
 
-console.log(blogPosts[0].title);
-console.log(blogPosts[0].comments[1].name);
+universities.forEach (function (university) {
+    if (university.hasGone) {
+        console.log(university.name, university.year);
+    } else {
+        console.log(university.name);
+    }
+});
+
 
 
 
