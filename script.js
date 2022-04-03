@@ -526,32 +526,70 @@
 // var student3 = 'Leonard';
 // var student4 = 'Raj';
 
-var students = ['Sheldon', 'Penny', 'Leonard', 'Raj'];
+// var students = ['Sheldon', 'Penny', 'Leonard', 'Raj'];
 
-//sheldon = index 0, penny = index 1, leonard = index 2, raj = index 3
+// //sheldon = index 0, penny = index 1, leonard = index 2, raj = index 3
 
-// console.log(students); 
-// console.log(students[0]);
+// // console.log(students); 
+// // console.log(students[0]);
 
-students[0] = 'Philip J. Fry';
-console.log(students);
+// students[0] = 'Philip J. Fry';
+// console.log(students);
 
 
-students[4] = 'Dr. John Zoidburg'
-console.log(students);
+// students[4] = 'Dr. John Zoidburg'
+// console.log(students);
 
-students[7] = 'John';
-console.log(students);
+// students[7] = 'John';
+// console.log(students);
 
-// var cats = [];
-// var cats = new Array();
+// // var cats = [];
+// // var cats = new Array();
 
-var commonData = ['John', 25, true, null];
-commonData[1];
+// var commonData = ['John', 25, true, null];
+// commonData[1];
 
-var cars = ['Mercedes', 'Audi', 'BMW', 'Volvo'];
-var cars_length = cars.length;
+// var cars = ['Mercedes', 'Audi', 'BMW', 'Volvo'];
+// var cars_length = cars.length;
 
-console.log(cars_length)
+// console.log(cars_length)
 
+
+// ARRAY METHODS //
+
+// var students = ['Sheldon', 'Penny', 'Leonard', 'Raj'];
+
+// push method adds new element to end of array
+// students.push('Bender');
+// console.log(students);
+
+// pop method removes the last element in an array
+// var lastStudent = students.pop();
+// console.log(lastStudent);
+// console.log(students);
+
+
+// unshift adds a new element to the beginning of the array
+// var cats = ['cat1', 'cat2', 'cat3'];
+// cats.unshift('cat4');
+// console.log(cats);
+
+
+// shift removes element from the beginning of the array
+// cats.shift();
+// console.log(cats);
+
+
+// indexOf method takes argument and finds it in an array
+// console.log(students.indexOf('Penny'));
+
+
+// slice method copies different portions of an array
+var friends = ['Ross', 'Rachel', 'Joey', 'Chandler', 'Phoebe'];
+var closeFriends = friends.slice(1, 3);
+console.log(friends);
+console.log(closeFriends);
+
+var otherFriends = friends.slice();
+console.log(otherFriends);
 
