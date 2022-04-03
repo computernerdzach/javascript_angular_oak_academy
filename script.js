@@ -506,14 +506,52 @@
 // console.log(sentence);
 
 
-function writeNumber() {
-    var myx = 30;
-    console.log(myx);
-}
+// function writeNumber() {
+//     var myx = 30;
+//     console.log(myx);
+// }
 
-function doSomething() {
-    console.log(myx);
-}
+// function doSomething() {
+//     console.log(myx);
+// }
 
-writeNumber();
-doSomething();
+// writeNumber();
+// doSomething();
+
+
+// ARRAYS //
+
+// var student1 = 'Sheldon';
+// var student2 = 'Penny';
+// var student3 = 'Leonard';
+// var student4 = 'Raj';
+
+var students = ['Sheldon', 'Penny', 'Leonard', 'Raj'];
+
+//sheldon = index 0, penny = index 1, leonard = index 2, raj = index 3
+
+// console.log(students); 
+// console.log(students[0]);
+
+students[0] = 'Philip J. Fry';
+console.log(students);
+
+
+students[4] = 'Dr. John Zoidburg'
+console.log(students);
+
+students[7] = 'John';
+console.log(students);
+
+// var cats = [];
+// var cats = new Array();
+
+var commonData = ['John', 25, true, null];
+commonData[1];
+
+var cars = ['Mercedes', 'Audi', 'BMW', 'Volvo'];
+var cars_length = cars.length;
+
+console.log(cars_length)
+
+
