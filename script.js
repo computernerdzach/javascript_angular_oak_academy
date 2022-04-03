@@ -596,20 +596,34 @@
 
 // ARRAY QUIZ //
 
-console.log('Problem 1:');
-var books = ['Harry Potter', 'Hobbit', 'Hunger Games', 'Little Prince'];
-var lastBook = books[books.length - 1];
-console.log(lastBook);
-console.log('');
+// console.log('Problem 1:');
+// var books = ['Harry Potter', 'Hobbit', 'Hunger Games', 'Little Prince'];
+// var lastBook = books[books.length - 1];
+// console.log(lastBook);
+// console.log('');
 
-console.log('Problem 2:');
-var films = [
-    ['hobbit1', 'hobbit1', 'hobbit3'],
-    ['matrix1', 'matrix2', 'matrix3'],
-    ['godFather1', 'godFather2', 'godFather3']
-];
-var godFatherFilms = films[films.length - 1].slice();
-var lastGodFather = godFatherFilms[godFatherFilms.length - 1]
-console.log(lastGodFather);
+// console.log('Problem 2:');
+// var films = [
+//     ['hobbit1', 'hobbit1', 'hobbit3'],
+//     ['matrix1', 'matrix2', 'matrix3'],
+//     ['godFather1', 'godFather2', 'godFather3']
+// ];
+// var godFatherFilms = films[films.length - 1].slice();
+// var lastGodFather = godFatherFilms[godFatherFilms.length - 1];
+// console.log(lastGodFather);
+
+
+// ARRAY ITERATION //
+
+var books = ['Harry Potter', 'Hobbit', 'Hunger Games', 'Little Prince'];
+
+// for(var i = 0; i < books.length; i++) {
+//     console.log('Book', (i+1) + ':', books[i]);
+// }
+
+books.forEach(function (book) {
+    console.log(book);
+});
+
 
 
