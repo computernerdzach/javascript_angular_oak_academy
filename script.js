@@ -767,28 +767,58 @@
 
 // OBJECT METHODS //
 
-var sheldon = {
+// var sheldon = {
 
-    name: 'Sheldon',
-    age: 25,
-    hasGone: true,
-    friends: ['Penny', 'Raj'],
+//     name: 'Sheldon',
+//     age: 25,
+//     hasGone: true,
+//     friends: ['Penny', 'Raj'],
 
-    say: function() {
-        console.log('Say hi, Sheldon.');
+//     say: function() {
+//         console.log('Say hi, Sheldon.');
+//     }
+
+// };
+
+// sheldon.say();
+
+// var Leonard = {
+
+//     name: 'Leonard',
+
+//     say: function() {
+//         console.log('Say hi, Leonard.')
+//     }
+
+// };
+
+// Leonard.say();
+
+
+// THIS KEYWORD //
+
+ console.log(this);
+
+ function addNumbers (x, y) {
+     console.log(x + y);
+     console.log(this);
+ }
+
+ addNumbers(20, 10);
+
+ var Raj = {
+    name: 'Raj',
+    year: 1989,
+    sayHi: function () {
+        console.log(this);
+        console.log('say hi ' + this.name);
+
+        function someFunc() {
+            console.log(this);
+        }
+        someFunc();
     }
+ };
 
-};
-
-sheldon.say();
-
-var Leonard = {
-    name: 'Leonard',
-    say: function() {
-        console.log('Say hi, Leonard.')
-    }
-}
-
-Leonard.say();
-
+ Raj.sayHi()
 
