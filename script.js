@@ -629,19 +629,43 @@
 
 // ARRAY ITERATION QUIZ //
 
-console.log('Problem 1:')
-var firstTwenty = new Array();
-for(i = 0; i <= 20 ; i++) {
-    firstTwenty.push(i);
+// console.log('Problem 1:')
+// var firstTwenty = new Array();
+// for(i = 0; i <= 20 ; i++) {
+//     firstTwenty.push(i);
+// };
+// console.log(firstTwenty);
+// console.log('');
+
+// console.log('Problem 2:')
+// firstTwenty.forEach(function (number) {
+//     if (number % 5 === 0) {
+//         console.log(number);
+//     }
+// });
+
+
+// OBJECTS //
+
+// var student1 = ['Arthur Dent', 36, 'London U'];
+// var student2 = [36, 'Ford Prefect', 'London U'];
+
+// student1[0];
+// student2[1];
+
+
+// var student = new Object();
+// student.name = 'Arthur Dent';
+
+var schoolName = 'school';
+
+var student = {
+    name: 'Arthur Dent',
+    age: 36,
+    school: 'London U'
 };
-console.log(firstTwenty);
-console.log('');
 
-console.log('Problem 2:')
-firstTwenty.forEach(function (number) {
-    if (number % 5 === 0) {
-        console.log(number);
-    }
-});
-
+// console.log(student['name']);
+// console.log(student.school);
+console.log(student[schoolName]);
 
