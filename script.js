@@ -615,15 +615,33 @@
 
 // ARRAY ITERATION //
 
-var books = ['Harry Potter', 'Hobbit', 'Hunger Games', 'Little Prince'];
+// var books = ['Harry Potter', 'Hobbit', 'Hunger Games', 'Little Prince'];
 
 // for(var i = 0; i < books.length; i++) {
 //     console.log('Book', (i+1) + ':', books[i]);
 // }
 
-books.forEach(function (book) {
-    console.log(book);
-});
+// books.forEach(function (book) {
+//     console.log(book);
+// });
 
+
+
+// ARRAY ITERATION QUIZ //
+
+console.log('Problem 1:')
+var firstTwenty = new Array();
+for(i = 0; i <= 20 ; i++) {
+    firstTwenty.push(i);
+};
+console.log(firstTwenty);
+console.log('');
+
+console.log('Problem 2:')
+firstTwenty.forEach(function (number) {
+    if (number % 5 === 0) {
+        console.log(number);
+    }
+});
 
 
