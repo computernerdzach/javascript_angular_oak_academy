@@ -1,47 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>JAVASCRIPT DOM</title>
-        <style type="text/css">
-            .addClass {
-                width: 300px;
-                height: 20px;
-                background: red;
-                color: white;
-                border: 10px solid black;
-            }
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JAVASCRIPT DOM</title>
+    <style type="text/css">
+        .addClass {
+            width: 300px;
+            height: 20px;
+            background: red;
+            color: white;
+            border: 10px solid black;
+        }
 
-            .toggleBackground {
-                background-color: red;
-                color: white;
-            }
-        </style>
-    </head>
+        .toggleBackground {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
 
-    <body>
-        <h1 id="OAKTitle">JAVASCRIPT DOM MANIPULATION</h1>
-        <h1>OAK Academy</h1>
+<body>
+    <style type="text/css">
+        .toggleLine {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+    <h1 id="OAKTitle">JAVASCRIPT DOM MANIPULATION</h1>
+    <h1>OAK Academy</h1>
 
-        <p id="oakParagraph">OAK Academy is the <strong>best</strong> academy</p>
+    <p id="oakParagraph">OAK Academy is the <strong>best</strong> academy</p>
 
-        <div class="background">Background div1</div>
-        <div class="background">Background div2</div>
+    <div class="background">Background div1</div>
+    <div class="background">Background div2</div>
 
-        <ul>
-            <li>Cat</li>
-            <li>Dog</li>
-            <li>Elephant</li>
-        </ul>
+    <ul>
+        <li>Cat</li>
+        <li>Dog</li>
+        <li>Elephant</li>
+    </ul>
 
-        <a href="https://oakacademy.uk/courses">OAK Academy</a>
-        <div>
-            <button id="btn1">Click to this button</button>
-        </div>
-        <script src="script.js"></script>
-    </body>
+    <h4> TO-DO List</h4>
+
+    <ul>
+        <li id="lineItem" class="todoItem">Go to school</li>
+        <li id="lineItem" class="todoItem">Go to gym</li>
+        <li id="lineItem" class="todoItem">Go to shopping</li>
+        <li id="lineItem" class="todoItem">cook dinner</li>
+    </ul>
+
+    <a href="https://oakacademy.uk/courses">OAK Academy</a>
+    <div>
+        <button id="btn1">Click to this button</button>
+    </div>
+    <script src="script.js"></script>
+</body>
 
 </html>

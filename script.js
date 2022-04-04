@@ -116,13 +116,22 @@ paragraph.innerHTML = 'Oak academy is <strong>great</strong>';
 //     })
 // });
 
-var oakParagraph = document.querySelector('#oakParagraph');
+// var oakParagraph = document.querySelector('#oakParagraph');
 
-function toggleBackground () {
-    oakParagraph.classList.toggle('toggleBackground');
-}
+// function toggleBackground () {
+//     oakParagraph.classList.toggle('toggleBackground');
+// }
 
-oakParagraph.addEventListener('click', toggleBackground);
+// oakParagraph.addEventListener('click', toggleBackground);
+
+var toDos = document.querySelectorAll('#lineItem');
+console.log(toDos);
+
+toDos.forEach(function (line) {
+    line.addEventListener('mouseover', function () {
+        this.classList.toggle('toggleLine');
+    })
+});
 
 
 
