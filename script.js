@@ -129,11 +129,13 @@ var toDos = document.querySelectorAll('.todoItem');
 toDos.forEach(function (line) {
 
     line.addEventListener('mouseover', function () {
-        this.classList.add('lineClass');
+        line.style.backgroundColor = 'blue';
+        line.style.color = 'white';
     })
 
     line.addEventListener('mouseout', function () {
-        this.classList.remove('lineClass');
+        line.style.backgroundColor = 'white';
+        line.style.color = 'black';
     })
-    
+
 });
