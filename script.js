@@ -49,7 +49,7 @@ console.log(selectWithQueryAllClass);
 
 // MANIPULATION METHODS //
 
-var divToManipulate = document.querySelector('.background');
+// var divToManipulate = document.querySelector('.background');
 
 /*
 divToManipulate.style.height = '50px';
@@ -62,8 +62,12 @@ divToManipulate.style.border = '5px solid black';
 // divToManipulate.classList.add('addClass');
 // divToManipulate.classList.remove('addClass');
 
-divToManipulate.classList.toggle('addClass');
-divToManipulate.classList.toggle('addClass');
-divToManipulate.classList.toggle('addClass');
+// divToManipulate.classList.toggle('addClass');
+// divToManipulate.classList.toggle('addClass');
+// divToManipulate.classList.toggle('addClass');
 
+var paragraph = document.querySelector('#oakParagraph');
+
+// paragraph.textContent = 'OAK academy is the best, really!';
+paragraph.innerHTML = 'Oak academy is <strong>great</strong>';
 
