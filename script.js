@@ -124,18 +124,20 @@ paragraph.innerHTML = 'Oak academy is <strong>great</strong>';
 
 // oakParagraph.addEventListener('click', toggleBackground);
 
+// select all of class 'todoItem'
 var toDos = document.querySelectorAll('.todoItem');
 
+// for each item, mouseon blue, mouseoff white
 toDos.forEach(function (line) {
 
     line.addEventListener('mouseover', function () {
-        line.style.backgroundColor = 'blue';
-        line.style.color = 'white';
+        this.style.backgroundColor = 'blue';
+        this.style.color = 'white';
     })
 
     line.addEventListener('mouseout', function () {
-        line.style.backgroundColor = 'white';
-        line.style.color = 'black';
+        this.style.backgroundColor = 'white';
+        this.style.color = 'black';
     })
 
-});
+})
