@@ -125,13 +125,12 @@ paragraph.innerHTML = 'Oak academy is <strong>great</strong>';
 // oakParagraph.addEventListener('click', toggleBackground);
 
 var toDos = document.querySelectorAll('#lineItem');
-console.log(toDos);
 
 toDos.forEach(function (line) {
     line.addEventListener('mouseover', function () {
-        this.classList.toggle('toggleLine');
+        this.classList.add('lineClass');
+    })
+    line.addEventListener('mouseout', function () {
+        this.classList.remove('lineClass');
     })
 });
-
-
-
