@@ -125,23 +125,23 @@ paragraph.innerHTML = 'Oak academy is <strong>great</strong>';
 // oakParagraph.addEventListener('click', toggleBackground);
 
 // select all of class 'todoItem'
-var toDos = document.querySelectorAll('.todoItem');
+// var toDos = document.querySelectorAll('.todoItem');
 
-// for each item, mouseon blue, mouseoff white
-toDos.forEach(function (line) {
+// // for each item, mouseon blue, mouseoff white
+// toDos.forEach(function (line) {
 
-    line.addEventListener('mouseover', function () {
-        this.style.backgroundColor = 'blue';
-        this.style.color = 'white';
-    })
+//     line.addEventListener('mouseover', function () {
+//         this.style.backgroundColor = 'blue';
+//         this.style.color = 'white';
+//     })
 
-    line.addEventListener('mouseout', function () {
-        this.style.backgroundColor = 'white';
-        this.style.color = 'black';
-    })
+//     line.addEventListener('mouseout', function () {
+//         this.style.backgroundColor = 'white';
+//         this.style.color = 'black';
+//     })
 
-    line.addEventListener('click', function () {
-        this.classList.toggle('okay');
-    })
+//     line.addEventListener('click', function () {
+//         this.classList.toggle('okay');
+//     })
 
-})
+// })
