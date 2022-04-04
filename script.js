@@ -26,6 +26,7 @@ setInterval(function () {
 }, 1000);
 */
 
+/*
 var selectWithId = document.getElementById('oakParagrah');
 console.log(selectWithId);
 
@@ -43,6 +44,26 @@ console.log(selectWithClass);
 
 var selectWithQueryAllClass = document.querySelectorAll('.background');
 console.log(selectWithQueryAllClass);
+*/
 
+
+// MANIPULATION METHODS //
+
+var divToManipulate = document.querySelector('.background');
+
+/*
+divToManipulate.style.height = '50px';
+divToManipulate.style.width = '400px';
+divToManipulate.style.backgroundColor = 'red';
+divToManipulate.style.fontSize = '30px';
+divToManipulate.style.border = '5px solid black';
+*/
+
+// divToManipulate.classList.add('addClass');
+// divToManipulate.classList.remove('addClass');
+
+divToManipulate.classList.toggle('addClass');
+divToManipulate.classList.toggle('addClass');
+divToManipulate.classList.toggle('addClass');
 
 
