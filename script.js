@@ -66,8 +66,22 @@ divToManipulate.style.border = '5px solid black';
 // divToManipulate.classList.toggle('addClass');
 // divToManipulate.classList.toggle('addClass');
 
+/*
 var paragraph = document.querySelector('#oakParagraph');
 
 // paragraph.textContent = 'OAK academy is the best, really!';
 paragraph.innerHTML = 'Oak academy is <strong>great</strong>';
+*/
+
+
+// MANIPULATE ATTRIBUTES //
+
+var myLink = document.querySelector('a');
+
+console.log(myLink.getAttribute('href'));
+
+myLink.setAttribute('href', 'https://www.facebook.com/');
+console.log(myLink.getAttribute('href'));
+
+myLink.textContent = 'go to facebook';
 
