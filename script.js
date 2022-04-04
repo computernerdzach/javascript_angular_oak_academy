@@ -140,4 +140,8 @@ toDos.forEach(function (line) {
         this.style.color = 'black';
     })
 
+    line.addEventListener('click', function () {
+        this.classList.toggle('okay');
+    })
+
 })
