@@ -92,10 +92,36 @@ var button = document.querySelector('#btn1');
 var buttonClicks = 0;
 var title = document.querySelector('#OAKTitle');
 
-button.addEventListener('click', function() {
+button.addEventListener('click', function () {
     buttonClicks++;
-    console.log('You clicked the button', buttonClicks, 'times');
-    title.style.backgroundColor = 'red';
+    if (buttonClicks === 1) {
+        console.log('You clicked the buttone 1 time');
+    } else {
+        console.log('You clicked the button', buttonClicks, 'times')
+    }
+
 });
+title.style.backgroundColor = 'red';
+
+var listParent = document.querySelector('ul');
+listParent.addEventListener('click', function () {
+    console.log('You clicked the ul');
+    listParent.style.backgroundColor = 'blue';
+    var ulS = document.querySelectorAll('li');
+    ulS.forEach(function (item) {
+        item.addEventListener('click', function () {
+            item.style.backgroundColor = 'white';
+        })
+    });
+});
+
+
+
+// var ulS = document.querySelectorAll('li');
+// ulS.forEach(function (item) {
+//     item.addEventListener('click', function () {
+//         item.style.backgroundColor = 'white';
+//     })
+// });
 
 
